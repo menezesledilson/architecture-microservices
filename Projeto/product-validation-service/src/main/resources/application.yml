@@ -1,22 +1,23 @@
 server:
   port: 8090
 
-  spring:
-    kafka:
-      bootstrap-service: ${KAFKA_BROCKER:localhost:9092}
-      topic:
-         orchestrator: orchestrator
-         product-validation-sucess: product-validation-sucess
-         product-validation-fail: product-validation-fail
-      consumer:
-        group-id: product-validation-group
-        auto-offset-reset: latest
+spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_BROKER:localhost:9092}
+    topic:
+      orchestrator: orchestrator
+      product-validation-success: product-validation-success
+      product-validation-fail: product-validation-fail
+    consumer:
+      group-id: product-validation-group
+      auto-offset-reset: latest
 
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:product-db}
     username: ${DB_USER:postgres}
     password: ${DB_PASSWORD:postgres}
+
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -24,8 +25,8 @@ server:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-  logging:
-    level:
-      org:
-        apache:
-          kafka: OFF
+logging:
+  level:
+    org:
+      apache:
+        kafka: OFF
