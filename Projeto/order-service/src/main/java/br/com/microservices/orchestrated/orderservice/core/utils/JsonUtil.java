@@ -3,7 +3,6 @@ package br.com.microservices.orchestrated.orderservice.core.utils;
 import br.com.microservices.orchestrated.orderservice.core.document.Event;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 
