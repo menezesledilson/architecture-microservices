@@ -1,4 +1,4 @@
-package br.com.microservices.orchestrated.orderservice.core.document;
+package br.com.microservices.orchestrated.orchestratorservice.core.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package br.com.microservices.orchestrated.orderservice.core.document;
+package br.com.microservices.orchestrated.paymentservice.core.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
