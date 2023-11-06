@@ -15,7 +15,6 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Table(name = "validation")
 public class Validation {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -36,8 +35,9 @@ public class Validation {
         createdAt = now;
         updatedAt = now;
     }
+
     @PreUpdate
     public void preUpdate() {
-       updatedAt = LocalDateTime.now();
+        updatedAt = LocalDateTime.now();
     }
 }
