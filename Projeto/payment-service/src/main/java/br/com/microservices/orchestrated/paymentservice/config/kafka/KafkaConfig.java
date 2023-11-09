@@ -1,6 +1,5 @@
 package br.com.microservices.orchestrated.paymentservice.config.kafka;
 
-
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -20,8 +19,8 @@ import java.util.Map;
 @EnableKafka
 @Configuration
 @RequiredArgsConstructor
-
 public class KafkaConfig {
+
     private static final Integer PARTITION_COUNT = 1;
     private static final Integer REPLICA_COUNT = 1;
 
@@ -78,10 +77,10 @@ public class KafkaConfig {
 
     private NewTopic buildTopic(String name) {
         return TopicBuilder
-                .name(name)
-                .partitions(PARTITION_COUNT)
-                .replicas(REPLICA_COUNT)
-                .build();
+            .name(name)
+            .partitions(PARTITION_COUNT)
+            .replicas(REPLICA_COUNT)
+            .build();
     }
 
     @Bean

@@ -1,6 +1,6 @@
 package br.com.microservices.orchestrated.paymentservice.core.enums;
 
-public enum EPaymenntStatus {
+public enum EPaymentStatus {
     PENDING,
     SUCCESS,
     REFUND

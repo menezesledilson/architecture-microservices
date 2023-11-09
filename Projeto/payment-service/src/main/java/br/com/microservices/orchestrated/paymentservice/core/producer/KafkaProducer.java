@@ -3,6 +3,7 @@ package br.com.microservices.orchestrated.paymentservice.core.producer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
@@ -18,11 +19,10 @@ public class KafkaProducer {
 
     public void sendEvent(String payload) {
         try {
-            log.info("Sending event to topic {} wtich data {}", orchestratorTopic, payload);
+            log.info("Sending event to topic {} with data {}", orchestratorTopic, payload);
             kafkaTemplate.send(orchestratorTopic, payload);
         } catch (Exception ex) {
             log.error("Error trying to send data to topic {} with data {}", orchestratorTopic, payload, ex);
         }
     }
-
 }

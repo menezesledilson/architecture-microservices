@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
-
 @Component
 @AllArgsConstructor
 public class JsonUtil {
@@ -16,7 +15,7 @@ public class JsonUtil {
         try {
             return objectMapper.writeValueAsString(object);
         } catch (Exception ex) {
-            return " ";
+            return "";
         }
     }
 
