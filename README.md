@@ -8,6 +8,7 @@
 - Docker
 - docker-compose
 - Redpanda Console
+  
 ##Ferramentas utilizadas
 - IntelliJ IDEA Community Edition
 - Docker
