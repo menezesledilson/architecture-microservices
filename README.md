@@ -2,8 +2,7 @@
  
 Para acessar o curso na plataforma, basta acessar esta URL: https://www.udemy.com/course/arquitetura-de-microsservicos-padrao-saga-orquestrado/
 
- ## Tecnologias
-
+ ##Tecnologias
 * **Java 17**
 * **Spring Boot 3**
 * **Apache Kafka**
@@ -14,7 +13,7 @@ Para acessar o curso na plataforma, basta acessar esta URL: https://www.udemy.co
 * **docker-compose**
 * **Redpanda Console**
 
-# Ferramentas utilizadas
+##Ferramentas utilizadas
 
 * **IntelliJ IDEA Community Edition**
 * **Docker**
