@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Projeto: Curso Udemy - Arquitetura de Microsserviços: Padrão Saga Orquestrado
  
 Para acessar o curso na plataforma, basta acessar esta URL: https://www.udemy.com/course/arquitetura-de-microsservicos-padrao-saga-orquestrado/
@@ -22,9 +21,6 @@ Para acessar o curso na plataforma, basta acessar esta URL: https://www.udemy.co
 * **Gradle**
 
 # Arquitetura Proposta
-
-![Arquitetura](Conte%C3%BAdos/Arquitetura%20Proposta.png)
-
 Em nossa arquitetura, teremos 5 serviços:
 
 * **Order-Service**: microsserviço responsável apenas por gerar um pedido inicial, e receber uma notificação. Aqui que teremos endpoints REST para inciar o processo e recuperar os dados dos eventos. O banco de dados utilizado será o MongoDB.
