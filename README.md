@@ -1,7 +1,7 @@
 # Projeto: Curso Udemy - Arquitetura de Microsserviços: Padrão Saga Orquestrado
  
-## Para acessar o curso na plataforma, basta acessar esta URL: https://www.udemy.com/course/arquitetura-de-microsservicos-padrao-saga-orquestrado/
-## Este projeto foi criado com base no repositório [Saga-Orquestrado](https://github.com/vhnegrisoli/curso-udemy-microsservicos-padrao-saga-orquestrado.git) do Victor Hugo.
+# Para acessar o curso na plataforma, basta acessar esta URL: https://www.udemy.com/course/arquitetura-de-microsservicos-padrao-saga-orquestrado/
+# Este projeto foi criado com base no repositório [Saga-Orquestrado](https://github.com/vhnegrisoli/curso-udemy-microsservicos-padrao-saga-orquestrado.git) do Victor Hugo.
 
  ## Tecnologias
 * **Java 17**
